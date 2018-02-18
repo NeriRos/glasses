@@ -1,0 +1,1 @@
+cd backEnd && npm start
