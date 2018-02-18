@@ -12,3 +12,4 @@ targil from harel
 3. execute init.bat.
 4. execute startMongoDB.bat.
 5. execute startServer.bat.
+6. browse to: `localhost`
