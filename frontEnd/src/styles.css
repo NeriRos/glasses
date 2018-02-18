@@ -1,0 +1,72 @@
+
+/* You can add global styles to this file, and also import other style files */
+body {
+    padding: 50px;
+}
+input[type="file"] button {
+    border: 0;
+}
+
+.button {
+    cursor: pointer;
+}
+
+.company_icon {
+    position: fixed;
+    opacity: 0.7;
+    left: 15px;
+    bottom: 0;
+    z-index: -2;
+}
+.ssl_icon {
+    position: fixed;
+    opacity: 0.7;
+    left: 220px;
+    bottom: 10px;
+    z-index: -2;
+}
+.nr_icon {
+    position: fixed;
+    opacity: 0.7;
+    height: 50px;
+    left: 320px;
+    bottom: 7px;
+    z-index: -2;
+}
+.copyright {
+    position: fixed;
+    opacity: 0.7;
+    bottom: 0;
+    right: 15px;
+    z-index: -10;
+}
+.etype_icon:hover,
+.ssl_icon:hover,
+.nr_icon:hover,
+.copyright:hover {
+    opacity: 0.99;
+}
+
+/* fallback */
+@font-face {
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: 400;
+    src: url(assets/fonts/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2) format('woff2');
+  }
+  
+  .material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    -webkit-font-feature-settings: 'liga';
+    -webkit-font-smoothing: antialiased;
+  }

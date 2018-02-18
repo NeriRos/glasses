@@ -1,0 +1,14 @@
+<div style="text-align:center">
+	<h2 style="text-decoration: Uppercase;">Glasses Scraper</h2>
+	<div class="jumbotron">	
+		<app-crawler></app-crawler>
+	</div>
+	<div class="glassesGallery">
+		<ng-template ngFor let-glasses [ngForOf]="glassesArray">
+			<div class="glasses">
+				<img [id]="glasses.id" [src]="glasses.imagePath" class="rounded float-left" [alt]="glasses.name">
+				<label [for]="glasses.id">{{glasses.name}}</label>
+			</div>
+		</ng-template>
+	</div>
+</div>

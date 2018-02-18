@@ -1,0 +1,13 @@
+.glassesGallery {
+    flex-wrap: warp;
+    justify-content: center;
+    align-items: center;
+}
+.glassesGallery img {
+    width: 150px;
+    height: auto;
+    padding-right: 10px;
+}
+.glasses {
+    flex-direction: column;
+}
