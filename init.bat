@@ -1,23 +1,28 @@
 @echo off
 
 echo. 
-echo [+] installing bower
-npm install -g bower
-echo. 
-echo [+] installing nodemon
-npm install -g nodemon
+echo [+] Installing yarn
+cmd.exe /C "npm install -g yarn && exit 0"
+echo .
+echo [+] Installing nodemon
+cmd.exe /C "npm install -g nodemon && exit 0"
 echo.  
-echo [+] installing angular cli
-npm install -g @angular/cli
+echo [+] Installing angular cli
+cmd.exe /C "npm install -g @angular/cli && exit 0"
 
-echo [+] installing back end prerequisites.
-cmd.exe /C "cd  %~dp0%backEnd && npm install"
+mkdir %~dp0%db
+
+echo [+] Installing back end prerequisites.
+cmd.exe /C "cd  %~dp0%backEnd && npm install && exit 0"
 echo. 
-echo [+] installing front end prerequisites.
-cmd.exe /C "cd  %~dp0%frontEnd && npm install"
+echo [+] Installing front end prerequisites.
+cmd.exe /C "cd  %~dp0%frontEnd && npm install && exit 0"
 echo.
-echo [+] installing front end assets prerequisites.
-cmd.exe /C "cd  %~dp0%frontEnd\src\assets && bower install"
+echo [+] Installing front end assets prerequisites.
+cmd.exe /C "cd  %~dp0%frontEnd\src\assets && yarn install && exit 0"
+echo.
+echo [+] Building frontEnd.
+cmd.exe /C "cd  %~dp0%backEnd && npm run build && exit 0"
 
 echo.
 echo.

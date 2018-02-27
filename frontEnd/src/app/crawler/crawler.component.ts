@@ -68,8 +68,9 @@ export class CrawlerComponent implements OnInit {
       let glassesLink = glassesElement.firstElementChild.getAttribute('href');
 
       id = id.substring(2, id.length - 2);
-      imageLink = 'https://' + imageLink.substring(4, imageLink.length - 2);
-      glassesLink = 'https://www.zennioptical.com' + glassesLink.substring(2, glassesLink.length - 2);
+      // tslint:disable-next-line:max-line-length
+      imageLink = `https://static.zennioptical.com/production/products/framefit/${id.substring(0, 2)}/${id.substring(2, 4)}/${id}.png?resize=550px:*`;
+      glassesLink = `https://www.zennioptical.com/${glassesLink.substring(2, glassesLink.length - 2)}`;
 
       glass = new Glasses(id);
       glass.setImagePath(imageLink);
