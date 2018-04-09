@@ -1,6 +1,7 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { CrawlerComponent } from './crawler.component';
+import { Http } from '@angular/http';
 
 describe('CrawlerComponent', () => {
   let component: CrawlerComponent;
@@ -21,5 +22,11 @@ describe('CrawlerComponent', () => {
 
   it('should create', () => {
     expect(component).toBeTruthy();
+  });
+
+  it('#crawl should request the glasses catalog page', () => {
+    spyOn(Http.prototype, 'get').and.returnValue(null);
+
+    component.crawl();
   });
 });
