@@ -1,12 +1,17 @@
-# ex1
-targil from harel
+# Glasses
+
+An assignment from harel.
+
+The goal was to test my programming skills.
 
 ## Prerequisites
+
 1. install mongodb.
 2. install nodejs.
 3. install npm.
 
 ## Installation process
+
 1. clone the project where ever you like.
 2. cd into the project.
 3. execute init.bat.
